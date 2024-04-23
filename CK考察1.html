@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>チャーチ・クリーネ順序数の基本列</title>
+   <style>
+      body{
+         color: #333333;
+         background-color: #beb2bc;
+      }
+      p{
+         color: rgb(19, 76, 78);
+      }
+   </style>
+</head>
+<body>
+   <h1>チャーチ・クリーネ順序数の基本列のようなもの</h1>
+   <h2>概要</h2>
+   <p>
+      \(\omega_1^{CK}\)の基本列のようなものを定義する。<br>
+      ↑(厳密な基本列ではない)
+   </p>
+   <h2>定義</h2>
+   <p>
+      \(\omega_1^{CK}\)と非負整数\(n\)に対し、\(\omega_1^{CK}[n]^*\)を以下のように定義する。<br>
+      \(\omega_1^{CK}[n]^*:=\begin{cases}
+         0&\text{if}\;n=0\\
+         \Psi(n)&\text{if}\;n>0
+      \end{cases}\)<br>
+      ただし、\(\Psi(n)\)は以下のように定義される。：<br>
+      1.\(n=1\)ならば、\(\Psi(n):=\emptyset\)である<br>
+      2.\(\textsf{ZFC}\)公理系を表現できる\(1\)階集合論で使用できる記号(論理記号と非論理記号)\(n\)個からなる論理式を満たす集合の順序数を\(\alpha\)とし、<br>
+        一意に存在していてかつ、\(\Psi(n-1)\)より大きいならば、\(\Psi(n):=\alpha\)とする。<br>
+      3.2のαが複数存在していてかつ\(\Psi(n-1)\)より大きいならば、\(\alpha\)の中で最も大きいものを\(\Psi(n)\)とする。
+      4.上記のいずれも当てはまらないならば、\(\Psi(n):=\Psi(n-1)\)とする。
+   </p>
+   <p>
+      だが、この基本列からなる順序数には基本列が定義されていないので、これから定義する。
+   </p>
+</body>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</html>
